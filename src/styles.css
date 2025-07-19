@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  background-color: rgb(243, 243, 243);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 511px;
+  border: 1px solid rgba(0, 0, 0, 0.108);
+  border-radius: 3px;
+  padding: 20px;
+}
+
+.calendar-month__text {
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+.calendar-week {
+  display: flex;
+  gap: 10px;
+}
+
+.calendar-week__day {
+  border: 1px solid rgba(0, 0, 0, 0.108);
+  border-radius: 3px;
+  width: 120px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.calendar-days__date {
+  border: 1px solid rgba(0, 0, 0, 0.108);
+  border-radius: 3px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.calendar-days__date--current {
+  background-color: black;
+  color: white;
+}
